@@ -1,0 +1,11 @@
+**/build
+**/dist
+**/docs
+**/coverage
+**/lib
+**/CHANGELOG.md
+**/.*
+**/*.d.ts
+**/*.hbs
+**/storybook-static
+packages/sources/css/src/design-tokens/src/themes/**/*.css

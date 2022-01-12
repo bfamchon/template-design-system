@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "cli": {
+    "packageManager": "yarn"
+  },
+  "projects": {
+    "@bfn/react": {
+      "root": "packages/sources/react",
+      "type": "library"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "template-design-system",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/sources/*",
+      "packages/docs/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
