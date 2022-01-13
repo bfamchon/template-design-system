@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { ButtonVariant, ButtonSize } from './types';
 
-export interface ButtonProps
-  extends React.ComponentPropsWithoutRef<'button'> {
+export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   /**
    * The variant of the button.
    * @defaultValue 'primary'
@@ -17,13 +16,7 @@ export interface ButtonProps
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    {
-      variant = 'primary',
-      size = 'medium',
-      children,
-      className,
-      ...props
-    },
+    { variant = 'primary', size = 'medium', children, className, ...props },
     ref,
   ) => {
     return (
@@ -34,9 +27,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         }`}
         {...props}
       >
-        {
-          children
-        }
+        {children}
       </button>
     );
   },
