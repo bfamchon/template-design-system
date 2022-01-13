@@ -1,5 +1,6 @@
 {
   "name": "template-design-system",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "prebuild": "yarn lint:fix",
