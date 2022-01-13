@@ -53,5 +53,8 @@
     "rollup-plugin-postcss": "^4.0.0",
     "typescript": "^4.5.4"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "gitHead": "3cb0d2cf0c0d1ba5b59ff8484300d2aba5b2f8fa"
 }
