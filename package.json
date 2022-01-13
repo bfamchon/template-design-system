@@ -1,6 +1,16 @@
 {
   "name": "template-design-system",
   "private": true,
+  "scripts": {
+    "prebuild": "yarn lint:fix",
+    "lint": "yarn prettier && yarn stylelint && nx run-many --target=lint --projects=@bfn/react",
+    "lint:fix": "yarn prettier:fix && yarn stylelint:fix && nx run-many --target=lint:fix --projects=@bfn/react",
+    "prettier": "prettier .",
+    "prettier:fix": "prettier . --write",
+    "release": "lerna publish --no-verify-access --no-private --no-commit-hooks --yes",
+    "stylelint": "stylelint packages/**/*.css",
+    "stylelint:fix": "yarn stylelint --fix"
+  },
   "workspaces": {
     "packages": [
       "packages/sources/*",
@@ -8,6 +18,22 @@
     ]
   },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@commitlint/cli": "^16.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@nrwl/cli": "^13.2.2",
+    "@nrwl/nx-cloud": "^13.0.0",
+    "@nrwl/tao": "^13.2.2",
+    "@nrwl/workspace": "^13.2.2",
+    "@storybook/storybook-deployer": "^2.8.10",
+    "cross-env": "^7.0.2",
+    "husky": "^7.0.1",
+    "is-ci": "^3.0.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.0.2",
+    "prettier": "^2.2.1",
+    "stylelint": "^14.0.0",
+    "stylelint-config-prettier": "^9.0.2",
+    "stylelint-config-standard": "^24.0.0",
+    "typescript": "^4.5.4"
   }
 }

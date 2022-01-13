@@ -52,5 +52,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
     "typescript": "^4.5.4"
-  }
+  },
+  "gitHead": "21c3a977788853f379e43d6ea58c9d1c0a823d4e"
 }
